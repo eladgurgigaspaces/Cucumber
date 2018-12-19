@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: hellocucumber.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.916 sec <<< FAILURE!
-I trying connect to embedded space write and read from the space(Hello Gigaspaces)  Time elapsed: 2.348 sec  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.712 sec <<< FAILURE!
+I trying connect to embedded space write and read from the space(Hello Gigaspaces)  Time elapsed: 1.372 sec  <<< ERROR!
 com.gigaspaces.client.protective.ProtectiveModeException: Cannot introduce a type named 'java.lang.String' without an id property defined. Having a type without an id property would prevent modifying (update/change) objects of that type after they were written to the space. (you can disable this protection, though it is not recommended, by setting the following system property: com.gs.protectiveMode.typeWithoutId=false)
 	at org.openspaces.core.exception.DefaultExceptionTranslator.translate(DefaultExceptionTranslator.java:91)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:970)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:962)
-	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:26)
+	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:24)
 	at ✽.I write "Hello" to the space(hellocucumber/HelloGigaspaces.feature:5)
 Caused by: com.gigaspaces.client.protective.ProtectiveModeException: Cannot introduce a type named 'java.lang.String' without an id property defined. Having a type without an id property would prevent modifying (update/change) objects of that type after they were written to the space. (you can disable this protection, though it is not recommended, by setting the following system property: com.gs.protectiveMode.typeWithoutId=false)
 	at com.gigaspaces.internal.server.space.SpaceEngine.write(SpaceEngine.java:787)
@@ -27,7 +27,7 @@ Caused by: com.gigaspaces.client.protective.ProtectiveModeException: Cannot intr
 	at com.gigaspaces.internal.client.spaceproxy.AbstractSpaceProxy.write(AbstractSpaceProxy.java:449)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:968)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:962)
-	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:26)
+	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

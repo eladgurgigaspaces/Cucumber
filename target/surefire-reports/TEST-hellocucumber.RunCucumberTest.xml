@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="hellocucumber.RunCucumberTest" time="2.348" errors="1" skipped="0">
+<testsuite tests="2" failures="0" name="hellocucumber.RunCucumberTest" time="1.387" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -62,12 +62,12 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Hello Gigaspaces" name="I trying connect to embedded space write and read from the space" time="2.348">
+  <testcase classname="Hello Gigaspaces" name="I trying connect to embedded space write and read from the space" time="1.372">
     <error message="Cannot introduce a type named &apos;java.lang.String&apos; without an id property defined. Having a type without an id property would prevent modifying (update/change) objects of that type after they were written to the space. (you can disable this protection, though it is not recommended, by setting the following system property: com.gs.protectiveMode.typeWithoutId=false)" type="com.gigaspaces.client.protective.ProtectiveModeException">com.gigaspaces.client.protective.ProtectiveModeException: Cannot introduce a type named &apos;java.lang.String&apos; without an id property defined. Having a type without an id property would prevent modifying (update/change) objects of that type after they were written to the space. (you can disable this protection, though it is not recommended, by setting the following system property: com.gs.protectiveMode.typeWithoutId=false)
 	at org.openspaces.core.exception.DefaultExceptionTranslator.translate(DefaultExceptionTranslator.java:91)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:970)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:962)
-	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:26)
+	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:24)
 	at ✽.I write &quot;Hello&quot; to the space(hellocucumber/HelloGigaspaces.feature:5)
 Caused by: com.gigaspaces.client.protective.ProtectiveModeException: Cannot introduce a type named &apos;java.lang.String&apos; without an id property defined. Having a type without an id property would prevent modifying (update/change) objects of that type after they were written to the space. (you can disable this protection, though it is not recommended, by setting the following system property: com.gs.protectiveMode.typeWithoutId=false)
 	at com.gigaspaces.internal.server.space.SpaceEngine.write(SpaceEngine.java:787)
@@ -87,7 +87,7 @@ Caused by: com.gigaspaces.client.protective.ProtectiveModeException: Cannot intr
 	at com.gigaspaces.internal.client.spaceproxy.AbstractSpaceProxy.write(AbstractSpaceProxy.java:449)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:968)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:962)
-	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:26)
+	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -136,14 +136,14 @@ Caused by: com.gigaspaces.client.protective.ProtectiveModeException: Cannot intr
     <system-out>Feature: Hello Gigaspaces
 
   Scenario: I trying connect to embedded space write and read from the space &amp;#27;[90m# hellocucumber/HelloGigaspaces.feature:3&amp;#27;[0m
-2018-12-18 18:03:33,377 CONFIG [com.gigaspaces.logger] - Log file: /home/eladg/.m2/repository/org/gigaspaces/logs/2018-12-18~18.03-gigaspaces-service-127.0.1.1-20124.log
+2018-12-19 10:58:53,053 CONFIG [com.gigaspaces.logger] - Log file: /home/eladg/.m2/repository/org/gigaspaces/logs/2018-12-19~10.58-gigaspaces-service-127.0.1.1-12640.log
     &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mi connected to embedded space&amp;#27;[0m                                      &amp;#27;[90m# HelloGigaspacesStepDefs.iConnectedToEmbeddedSpace()&amp;#27;[0m
     &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI write &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1mHello&amp;#27;[0m&amp;#27;[31m&quot; to the space&amp;#27;[0m                                         &amp;#27;[90m# HelloGigaspacesStepDefs.iWriteToTheSpace(String)&amp;#27;[0m
       &amp;#27;[31mcom.gigaspaces.client.protective.ProtectiveModeException: Cannot introduce a type named &apos;java.lang.String&apos; without an id property defined. Having a type without an id property would prevent modifying (update/change) objects of that type after they were written to the space. (you can disable this protection, though it is not recommended, by setting the following system property: com.gs.protectiveMode.typeWithoutId=false)
 	at org.openspaces.core.exception.DefaultExceptionTranslator.translate(DefaultExceptionTranslator.java:91)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:970)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:962)
-	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:26)
+	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:24)
 	at ✽.I write &quot;Hello&quot; to the space(hellocucumber/HelloGigaspaces.feature:5)
 Caused by: com.gigaspaces.client.protective.ProtectiveModeException: Cannot introduce a type named &apos;java.lang.String&apos; without an id property defined. Having a type without an id property would prevent modifying (update/change) objects of that type after they were written to the space. (you can disable this protection, though it is not recommended, by setting the following system property: com.gs.protectiveMode.typeWithoutId=false)
 	at com.gigaspaces.internal.server.space.SpaceEngine.write(SpaceEngine.java:787)
@@ -163,7 +163,7 @@ Caused by: com.gigaspaces.client.protective.ProtectiveModeException: Cannot intr
 	at com.gigaspaces.internal.client.spaceproxy.AbstractSpaceProxy.write(AbstractSpaceProxy.java:449)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:968)
 	at org.openspaces.core.DefaultGigaSpace.write(DefaultGigaSpace.java:962)
-	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:26)
+	at hellocucumber.HelloGigaspacesStepDefs.iWriteToTheSpace(HelloGigaspacesStepDefs.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,9 +210,9 @@ Caused by: com.gigaspaces.client.protective.ProtectiveModeException: Cannot intr
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 &amp;#27;[0m
     &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI read from the space&amp;#27;[0m                                               &amp;#27;[90m# HelloGigaspacesStepDefs.iReadFromTheSpace()&amp;#27;[0m
-    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI should get &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mHello&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                &amp;#27;[90m# HelloGigaspacesStepDefs.iShouldGet(String)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI should get &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mWorld&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                &amp;#27;[90m# HelloGigaspacesStepDefs.iShouldGet(String)&amp;#27;[0m
 </system-out>
-    <system-err>2018-12-18 18:03:33,363  INFO [com.gigaspaces.container] - Starting space...
+    <system-err>2018-12-19 10:58:53,047  INFO [com.gigaspaces.container] - Starting space...
 ************************************* System Report *************************************
 GigaSpaces XAP 14.0.0 GA (build 20000, revision )
     Home: /home/eladg/.m2/repository/org/gigaspaces/
@@ -222,19 +222,19 @@ Java:
     Java Runtime: Java(TM) SE Runtime Environment 1.8.0_181-b13 (Oracle Corporation)
     Java VM: Java HotSpot(TM) 64-Bit Server VM 25.181-b13 (Oracle Corporation)
     Java Home: /usr/lib/jvm/java-8-oracle/jre
-    Memory: Currently used 41MB, Current heap size 251MB, Max heap size 3713MB
+    Memory: Currently used 42MB, Current heap size 251MB, Max heap size 3713MB
 Operating System: Linux [version=4.15.0-42-generic, architecture=amd64, processors=4]
-Process Id: 20124
+Process Id: 12640
 Network:
     Local Host: [eladg-e7450/127.0.1.1] 
-    docker0: docker0 [IP addresses: fe80:0:0:0:42:99ff:fe20:26c6%docker0 | 172.17.0.1]
+    docker0: docker0 [IP addresses: 172.17.0.1]
     wlp2s0: wlp2s0 [IP addresses: fe80:0:0:0:59da:e30e:316b:85ac%wlp2s0 | 192.168.32.235]
     eno1: eno1 [IP addresses: fe80:0:0:0:8a38:d53f:9896:584c%eno1 | 192.168.32.237]
     lo: lo [IP addresses: 0:0:0:0:0:0:0:1%lo | 127.0.0.1]
 *****************************************************************************************
-2018-12-18 18:03:33,653  INFO [com.sun.jini.reggie.GigaRegistrar] - Starting Lookup Service...
-2018-12-18 18:03:34,048  INFO [com.sun.jini.reggie.GigaRegistrar] - Started Lookup Service [duration=0.395s, groups=[EladPC], service-id=94e47e73-a4b6-4fc1-8eb1-280f922dbbc8, locator=jini://127.0.1.1:4174/]
+2018-12-19 10:58:53,262  INFO [com.sun.jini.reggie.GigaRegistrar] - Starting Lookup Service...
+2018-12-19 10:58:53,435  INFO [com.sun.jini.reggie.GigaRegistrar] - Started Lookup Service [duration=0.173s, groups=[EladPC], service-id=050803a6-7209-466f-b859-5516193feb72, locator=jini://127.0.1.1:4174/]
 </system-err>
   </testcase>
-  <testcase classname="Is it Friday yet?" name="Sunday isn&apos;t Friday" time="0"/>
+  <testcase classname="Is it Friday yet?" name="Sunday isn&apos;t Friday" time="0.015"/>
 </testsuite>

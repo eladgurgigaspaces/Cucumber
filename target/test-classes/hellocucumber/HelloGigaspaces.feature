@@ -4,4 +4,4 @@
       Given i connected to embedded space
       And I write "Hello" to the space
       When I read from the space
-      Then I should get "Hello"
+      Then I should get "World"

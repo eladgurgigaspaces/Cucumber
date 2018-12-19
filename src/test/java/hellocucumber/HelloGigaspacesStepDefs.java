@@ -16,17 +16,17 @@ public class HelloGigaspacesStepDefs {
 
     @Given("^i connected to embedded space$")
     public void iConnectedToEmbeddedSpace() {
-        space = new GigaSpaceConfigurer(new EmbeddedSpaceConfigurer("HelloGigaspacesSpace")).gigaSpace();
+        space = new GigaSpaceConfigurer(new EmbeddedSpaceConfigurer("HelloGigaspacesSpace").addProperty("com.gs.protectiveMode.typeWithoutId","false")).gigaSpace();
     }
 
     @And("^I write \"([^\"]*)\" to the space$")
     public void iWriteToTheSpace(String toWrite) throws Throwable {
-        space.write("Hello");
+        space.write(toWrite);
     }
 
     @When("^I read from the space$")
     public void iReadFromTheSpace() {
-        read = space.read(new String());
+        read = space.read(new MyData()).getStr();
     }
 
     @Then("^I should get \"([^\"]*)\"$")
